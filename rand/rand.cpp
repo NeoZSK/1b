@@ -1,7 +1,7 @@
 ﻿#include <iostream>
 #include <cstdlib> // rand(), srand()
 #include <time.h> // time()
-#include <windows.h>
+#include <windows.h> // Sleep()
 
 using namespace std;
 
