@@ -17,16 +17,35 @@ __embeded_names__= None
 __name__ == "__main__" # when is a starting file
 
 
+
+
+
+
+
+
+
 # --- importing modules --- 
-import math
+import math 
 import keyword as kw
 
 from keyword import kwlist
 
 
+
+
+
+
+
 # --- keywords --- 
 # print(kw.kwlist)
 print(kwlist)
+
+
+
+
+
+
+
 
 
 # --- Continuation of statements --- 
@@ -35,6 +54,13 @@ if (1 == 1) and (1 == 1) and (1 == 1) and (1 == 1) and (1 == 1) and (1 == 1) \
     print("Continuation of statements")
     
     
+
+
+
+
+
+
+
 # --- Python Enhancement Proposals ---
 """ PEP8 
 https://peps.python.org/pep-0008/
@@ -43,12 +69,26 @@ https://peps.python.org/pep-0008/
 """
     
     
+
+
+
+
+
+
+
 # --- Defining functions ---
 def repeat_text(text, times):
     res = text * times
     return res
 
 repeat_text("asdf", 5)
+
+
+
+
+
+
+
 
 
 # --- Flow control ---
@@ -69,22 +109,37 @@ Use `is` in OOP in specific cases (is THE SAME object?) - sometimes a little tri
 """
 
 
+
+
+
+
+
+
+
 # --- Loops ---
 sequence = range(0,5)
 print(sequence)
 print(list(sequence))
 
-for i in range(0,5):
+for i in range(1,5):
     print(i)
 
 
 # iterate over list
-some_list = [55,22,44, "abs"]
+some_list = [55, 22, 44, "abs"]
 for item in some_list:
     print(f"item: {item}")
-
+    
+# index
 for idx, item in enumerate(some_list):
     print(f"item at idx {idx}: {item}")
+
+
+
+
+
+
+
 
 
 
@@ -102,6 +157,13 @@ print (x % y)
 
 # Exponentiation
 print (x ** y)
+
+
+
+
+
+
+
 
 
 
@@ -140,3 +202,33 @@ print(st)
 
 
 
+
+
+
+
+
+# --- String ---
+message1 = 'This is a string in Python'
+message2 = "This is also a string"
+print(message1)
+print(message2)
+
+# zewnętrzny jest silniejszy! 
+message = "It's a string"
+message = 'It"s a string'
+message = 'It\'s also a valid \'string '
+print(message1)
+print(message2)
+
+
+
+# multiline string
+help_message = '''
+Usage: mysql command
+    -h hostname     
+    -d database name
+    -u username
+    -p password 
+'''
+
+print(help_message)
