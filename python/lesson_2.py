@@ -134,3 +134,9 @@ print(dct["name"])
 # set (unique values)
 st = {1, 2, 3, 4, 2}
 print(st)
+
+
+
+
+
+
