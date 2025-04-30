@@ -1,0 +1,7 @@
+a = NULL
+
+powtarzaj
+     czytaj a ∈ ℤ
+aż (a mod 2 == 0)
+
+n = a

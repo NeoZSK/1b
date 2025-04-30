@@ -1,0 +1,6 @@
+czytaj n należące do N
+
+// a)
+dla i=1, ..., n wykonuj
+    jeżeli i mod 3 == 0 wykonaj
+        pisz i

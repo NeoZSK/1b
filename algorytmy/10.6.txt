@@ -1,0 +1,32 @@
+10.5 do domu na OneDrive (przypominajka!)
+---
+10.6
+7! = 1*2*3*4*5*6*7
+4! = 1*2*3*4
+
+7!/4! = 5*6*7
+
+
+---
+10.6 Pesudokod
+
+czytaj n ∈ N, n>=1
+czytaj k ∈ N, n >= k >=1
+
+// n_fac / (n_min_k_fac * k_fac) => 
+//      (k * k+1 * ... n) / k_fac
+
+
+licznik = 1
+dla i=k, ..., n wykonuj
+    licznik *= i
+
+silnia_k = 1
+dla i=1, ..., k wykonuj
+    silnia_k *= i
+
+mianownik = silnia_k 
+
+rezultat = licznik / mianownik 
+pisz rezultat
+

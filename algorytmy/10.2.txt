@@ -1,0 +1,11 @@
+czytaj n ∈ N+
+
+// a)
+dla i=1, ..., n wykonuj
+    pisz i
+
+
+// b)
+dopóki n >= 1 wykonuj
+    pisz n
+    n--

@@ -1,0 +1,21 @@
+funkcja a(k)
+    jeżeli k == 1 wykonaj
+	zwróć 3
+    w przeciwnym przypadku wykonaj
+	zwróć 2 * a(k-1) - 3
+
+
+funkcja b(k)
+    jeżeli k == 1 wykonaj
+	zwróć 5
+    w przeciwnym przypadku wykonaj
+	zwróć b(k-1) +7
+
+
+czytaj k (k: n+, k > 0)
+pisz(a(k))
+
+czytaj k (k: n+, k > 0)
+pisz(b(k))
+
+
