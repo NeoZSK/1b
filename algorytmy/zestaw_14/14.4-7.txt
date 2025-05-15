@@ -1,0 +1,92 @@
+overload +<Robot>(a,b) {
+	return new Pociąg();
+}
+
+14.3
+funkcja ABS(x)
+   jeżeli x < 0 wykonaj
+      x = -x
+   zwróć x
+
+14.5
+funkcja DISTANCE(x,y)
+    zwróć ABS(x-y)
+
+
+14.7
+funkcja POWER(k, a)
+    wynik = 1
+    dopoki a > 0 wykonuj
+        wynik *= k
+        a -= 1
+
+    zwróć wynik
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+14.8
+a = 6
+(k * k) * (k * k) * (k * k)
+
+x = k * k
+
+a = 3
+x * x * x
+
+
+res = 1
+a = 7
+(k * k) * (k * k) * (k * k) * k
+
+res = res * k
+a -= 1
+
+k = k * k
+a /= 2
+
+a = 3
+x * x * x
+
+
+
+funkcja POW(k, a)
+    res = 1
+    dopóki a > 0 wykonuj
+        jeżeli a % 2 == 0 wykonaj
+	        k = k * k
+            a /= 2
+        w przeciwnym wypadku
+            res *= k
+            a -= 1
+    pisz res * k
+
+
+
+
+
+
+
+
+
+
+

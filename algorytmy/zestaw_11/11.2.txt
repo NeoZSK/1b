@@ -1,0 +1,23 @@
+czytaj n ∈ N, n >= 2
+
+
+liczby = []
+dla i = 2, ..., n wykonuj
+   liczby[i-2] = i
+
+// [2,3,nil,5,6,7]
+
+i = 2
+dopóki i*i <= n wykonuj
+    dla j = i*i, ..., j+i, ..., n wykonuj
+        liczby[i-2] = nil
+       
+
+dla i = 1, ..., n wykonuj
+   liczba = liczby[i]
+   jeśli liczba != nil wykonaj
+      pisz liczba
+
+
+
+      

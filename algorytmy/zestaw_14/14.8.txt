@@ -1,0 +1,23 @@
+funkcja POW_6(k)
+    k = k * k  // od teraz k = k^2
+    zwróć k * k * k
+    
+
+funkcja POW_16(k)
+    k = k * k  // od teraz k = k^2
+    k = k * k  // od teraz k = k^4
+    k = k * k  // od teraz k = k^8
+    zwróć k * k 
+    
+
+// a)
+funkcja SZYBKI_POW(k, a)
+    wynik = 1
+    dopóki a > 0 wykonuj
+        jeżeli a % 2 == 0 wykonaj
+            k = k * k
+            a /= 2
+        w przeciwnym wypadku
+            wynik *= k
+            a -= 1
+    zwróć wynik * k

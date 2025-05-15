@@ -1,0 +1,46 @@
+czytaj n ∈ N
+
+
+a = n
+dzielnik = 2
+
+indeks = 0
+czynniki = [] 
+
+dopóki a > 1 wykonuj
+    jeśli a % dzielnik == 0 wykonaj
+        czynniki[indeks] = dzielnik
+
+        indeks += 1
+        a = a / dzielnik
+    w przeciwnym wypadku
+        dzielnik += 1
+        
+
+---
+
+a = n
+dzielnik = 2
+
+indeks = 0
+
+dopóki a > 1 wykonuj
+    jeśli a % dzielnik == 0 wykonaj
+        indeks += 1
+        a = a / dzielnik
+    w przeciwnym wypadku
+        dzielnik += 1
+
+dopóki a > 1 wykonuj
+    jeśli a % (dzielnik * dzielnik) != 0
+        pisz("nie")
+        a = 0
+    w przeciwnym wypadku
+        a = a / (dzielnik * dzielnik)
+
+
+
+
+    
+
+czynniki...
