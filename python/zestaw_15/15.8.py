@@ -8,3 +8,16 @@ def pow_quick(k, a):
             k = k*k
             a //= 2
     return res
+
+
+
+def evaluate(T, n, x):
+    result = 0
+    for i in range(0, n):
+        powed = pow_quick(x, n - (i + 1))
+        result += T[i] * powed
+
+    return result    
+    
+res = evaluate([5,4,0,4], 4, 50)
+print(res)
