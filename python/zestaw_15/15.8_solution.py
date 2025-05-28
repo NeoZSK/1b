@@ -1,5 +1,3 @@
-from time import time
-
 def pow_naive(k, a):
     res = 1
     while(a>0):
@@ -19,61 +17,49 @@ def pow_quick(k, a):
     return res
 
 
-# def evaluate_naive(T, n, x):
-#     res = 0
-#     for (idx, elem) in enumerate(T, start=1):
-#         res += elem * pow_naive(x, n-idx)
-#         # print(f"{elem} * {x}^{n-idx}")
-#     return res
+def horner_naive(T, n, x):
+    res = 0
+    for (idx, elem) in enumerate(T, start=1):
+        res += elem * pow_naive(x, n-idx)
+    return res
  
-# t = [4,5,6,7]
-# res = evaluate_naive(t, len(t), 3)
-# print(f"evaluate_naive: {res}")
-
-
-def evaluate(T, n, x):
+def horner(T, n, x):
     res = 0
     for (idx, elem) in enumerate(T, start=1):
         res += elem * pow_quick(x, n-idx)
-        # print(f"{elem} * {x}^{n-idx}")
-    return res
-        
-     
-t = [4,5,6,7]
-res = evaluate(t, len(t), 3)
-print(f"evaluate: {res}")
+    return res     
 
-
-
-
-def evaluate_iterative(T, n, x):
+def horner_iterative(T, n, x):
     res = 0
     for elem in T:
         res *= x
         res += elem
     return res
-             
-t = [4,5,6,7]
-res = evaluate_iterative(t, len(t), 3)
-print(f"evaluate_iterative: {res}")  
+
+def run(func):
+    t = [1,1,1,1,1,1]
+    res = func(t, len(t), 5)
+    print(f"{func.__name__}: {res}")
+
+# run(horner_naive)
+# run(horner)
+# run(horner_iterative)
+
+from time import time
+    
+def measure_time(func):
+    T = list([1]*10000)
+    n = len(T)
+    x = 2
+    
+    t1 = time()
+    res = func(T,n,x)
+    print(f"{func.__name__:20s}: {(time() - t1):.3f}")
 
 
-# a = list(range(5000, 0, -1))
-# b = len(a)
-# c = 2
 
-# print("\n--- times ---")
+print("\n--- times ---")
 
-# t1 = time()
-# evaluate_naive(a,b,c)
-# print(f"evaluate_naive: {(time() - t1):.3f}")
-
-# t1 = time()
-# evaluate(a,b,c)
-# print(f"evaluate: {(time() - t1):.3f}")
-
-# t1 = time()
-# evaluate_iterative(a,b,c)
-# print(f"evaluate_iterative: {(time() - t1):.3f}")
-
-
+measure_time(horner_naive)
+measure_time(horner)
+measure_time(horner_iterative)

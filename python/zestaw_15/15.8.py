@@ -21,3 +21,12 @@ def evaluate(T, n, x):
     
 res = evaluate([5,4,0,4], 4, 50)
 print(res)
+
+
+
+def evaluate_iterative(T, n, x):
+    res = 0
+    for elem in T:
+        res *= x
+        res += elem
+    return res

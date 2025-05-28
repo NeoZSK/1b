@@ -1,6 +1,6 @@
-# def swap(T, k, l):
-#     (T[k], T[l]) = (T[l], T[k])
-#     return T
+def swap(T, k, l):
+    (T[k], T[l]) = (T[l], T[k])
+    return T
 
 
 def swap2(T, k, l):
