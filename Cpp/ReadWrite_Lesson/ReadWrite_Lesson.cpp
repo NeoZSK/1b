@@ -7,7 +7,7 @@ using namespace std;
 int main()
 {
     fstream inFile("numbers.txt", ios::in);
-    fstream outFile("results.txt", ios::out);
+    fstream outFile("results.txt", ios::app);
     string line;
     int sum = 0;
 
